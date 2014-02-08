@@ -1,0 +1,14 @@
+@import "compass/reset";
+@import "compass/css3/box-sizing";
+@import 'gallery';
+@import 'text';
+@import 'form';
+@import 'nav';
+
+*, *:before, *:after { 
+  @include box-sizing('border-box');
+}
+
+.hidden {
+  display: none;
+}

@@ -1,0 +1,17 @@
+<ul ng-controller="PiecePreviewListController" class="image-list">
+  <li ng-repeat="piece in pieces"
+      class="image-preview piece list"
+      id="{{piece._id}}">
+    <div remove-image class="top-info clickable">
+      <span class="remove">Remove</span>
+    </div>
+      <div class="info">
+        <div class="title-container">
+          <h4>{{piece.title}} - {{piece.dimensionX}} x {{piece.dimensionY}}</h4>
+          <p>{{piece.year}}</p>
+          <p>{{piece.media}}</p>
+        </div>
+      </div>
+    <img class="img-thumbnail" src="{{piece.fileUrl}}" alt="{{piece.title}}"/>
+  </li>
+</ul>

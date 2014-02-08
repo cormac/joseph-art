@@ -1,0 +1,23 @@
+.header .nav {
+  width: 40em;
+  margin:auto;
+}
+
+.nav li {
+  float: left;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #dedede;
+  margin-right: .5em;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  &:hover, &.active {
+    background-color: #bbddff;
+  }
+}

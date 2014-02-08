@@ -1,0 +1,23 @@
+<div class="big-header">
+  <h2>Joseph Coveney</h2>
+</div>
+<div class="image-container">
+  <div ng-repeat="piece in pieces" class="piece list">
+      <div class="info">
+        <div class="title-container">
+          <h4>{{piece.title}} - {{piece.dimensionX}} x {{piece.dimensionY}}</h4>
+          <p class="left">{{piece.year}}</p>
+          <br>
+          <p class="left">{{piece.media}}</p>
+        </div>
+        <a ng-if="piece.sold != true" id="{{piece._id}}" stripe="" href="#">Buy buy buy!!!</a>
+        <br>
+        <p ng-if="piece.sold != true">€50</p>
+        <span class="sold" ng-if="piece.sold == true">Sold</span>
+      </div>
+      <img src="{{piece.fileUrl}}" alt="{{piece.title}}">
+  </div>
+</div>
+
+<div class="footer">
+</div>

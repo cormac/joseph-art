@@ -1,0 +1,45 @@
+.row {
+  width: 40em;
+  margin: auto;
+}
+.form-group {
+  clear:both;
+  width: 100%;
+
+  label {
+    padding: 0.5em;
+    padding-left: 0em;
+    width: 15%;
+    float: left;
+  }
+  input {
+    float: right;
+    width: 85%;
+    padding: 0.5em;
+  }
+  .help-block {
+    clear: left;
+    margin-left: 15%;
+  }
+  button {
+    margin-left: 15%;
+    font-size: 1.5em;
+    width: 85%;
+    padding: 0.5em;
+    margin-top: 1em;
+    background-color: #bbddff;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+}
+.login-header{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 15%;
+  width: 85%;
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+}

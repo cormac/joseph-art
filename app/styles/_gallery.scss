@@ -1,0 +1,78 @@
+@import "compass/css3/opacity";
+.big-header {
+  margin: 0px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background-color: #dedede;
+  color: #222222;
+  padding: 2em;
+  @include opacity(0.3);
+  z-index: 100;
+}
+
+.image-container {
+  margin-top: 6.5em;
+}
+.piece.list {
+  min-width: 400px;
+  margin: 0.25em;
+  position: relative;
+  float: left;
+  img {
+    margin: auto;
+    display: block;
+    max-height: 300px;
+    margin-bottom: 64px;
+  }
+}
+.top-info, .info {
+  position:absolute;
+  z-index: 3; 
+  background-color: #dedede;
+  @include opacity(0.3);
+  width: 100%;
+  padding: 0.5em;
+  .title-container {
+    float: left;
+  }
+  h4, p {
+    @include opacity(1);
+    color: black;
+  }
+  p{
+    float: right;
+  }
+  a, .sold {
+    clear:right;
+    color: black;
+    float: right;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  &:hover {
+    @include opacity(.75);
+  }
+}
+.info {
+  bottom: 0px;
+}
+
+.top-info {
+  top: 0px;
+  .remove {
+    float: right;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.info p.left {
+  float: left;
+}
